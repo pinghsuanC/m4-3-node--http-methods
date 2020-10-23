@@ -45,7 +45,7 @@ const Form = ({ formData, handleChange, handleClick, disabled, subStatus }) => (
       </FormGroup>
       <Input
         name="email"
-        type="text"
+        type="email" // altered type to email
         placeholder="Email"
         handleChange={handleChange}
       />
