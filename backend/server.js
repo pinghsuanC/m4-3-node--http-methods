@@ -121,7 +121,7 @@ express()
     if (result) {
       res.status(200).json({ status: result_ref[code] });
     } else {
-      res.status(401).json({ status: "error", error: result_ref[code] });
+      res.status(400).json({ status: "error", error: result_ref[code] });
     }
   })
   // add new endpoints here ☝️
