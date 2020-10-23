@@ -16,7 +16,7 @@ const shirtSize_ref = {
   small: "small",
   medium: "medium",
   large: "large",
-  "Extra-large": "xlarge",
+  extralarge: "xlarge",
 };
 const result_ref = {
   0: "success",
@@ -33,7 +33,7 @@ const only_country = "canada";
 const validation = (input) => {
   // deconstruct the input
   const { order, size, givenName, surname, email, address, country } = input;
-
+  console.log(size);
   // =============== 2. valid data received ( including email ) ===============
   // check whether size was selected when selecting tshirt
   // other data are required by form
